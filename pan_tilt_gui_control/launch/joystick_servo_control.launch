@@ -1,0 +1,6 @@
+<launch>
+  <include file="$(find joy)/launch/joy.launch"/>
+  <node pkg="your_package_name" type="joystick_servo_control.py" name="joystick_servo_control" output="screen"/>
+  <param name="/pan_controller/type" value="effort_controllers/JointPositionController"/>
+  <param name="/tilt_controller/type" value="effort_controllers/JointPositionController"/>
+</launch>

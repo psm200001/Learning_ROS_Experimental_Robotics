@@ -1,0 +1,23 @@
+<robot name="pan_tilt_cam">
+  <link name="base_link"/>
+  <joint name="pan_joint" type="continuous">
+    <parent link="base_link"/>
+    <child link="pan_link"/>
+    <origin xyz="0 0 0.1"/>
+    <axis xyz="0 0 1"/>
+  </joint>
+  <link name="pan_link"/>
+  <joint name="tilt_joint" type="continuous">
+    <parent link="pan_link"/>
+    <child link="tilt_link"/>
+    <origin xyz="0 0 0.1"/>
+    <axis xyz="0 1 0"/>
+  </joint>
+  <link name="tilt_link"/>
+  <joint name="camera_joint" type="fixed">
+    <parent link="tilt_link"/>
+    <child link="camera_link"/>
+    <origin xyz="0 0 0.1"/>
+  </joint>
+  <link name="camera_link"/>
+</robot>

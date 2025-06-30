@@ -1,0 +1,9 @@
+<library path="scripts/pan_tilt_rqt_control">
+  <class name="PanTiltPlugin"
+         type="pan_tilt_rqt_control.PanTiltPlugin"
+         base_class_type="rqt_gui_py::Plugin">
+    <description>
+      A plugin to control pan/tilt servos using sliders.
+    </description>
+  </class>
+</library>

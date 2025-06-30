@@ -1,0 +1,5 @@
+<launch>
+  <include file="$(find joy)/launch/joy.launch" />
+  <node pkg="rqt_gui" type="rqt_gui" name="rqt_gui" output="screen"/>
+  <node pkg="your_package" type="pan_tilt_rqt_control.py" name="pan_tilt_rqt_control" output="screen"/>
+</launch>
